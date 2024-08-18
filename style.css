@@ -1,0 +1,91 @@
+@font-face {
+  font-family: outfit;
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: young-serif;
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+:root {
+  --main-bg-100: hsl(30, 54%, 90%);
+  --main-bg-200: hsl(30, 18%, 87%);
+  --main-bg-300: hsl(30, 10%, 34%);
+  --main-bg-400: hsl(24, 5%, 18%);
+  --primary: hsl(14, 45%, 36%);
+  --secondary: hsl(332, 51%, 32%);
+  --secondary-light: hsl(330, 100%, 98%);
+}
+
+body {
+  background-color: var(--main-bg-100);
+  font-family: outfit;
+  line-height: 1.5;
+  color: var(--main-bg-400);
+}
+
+.color-secondary {
+  color: var(--secondary)
+}
+
+.color-primary {
+  color: var(--primary)
+}
+
+h1, h2 {
+  font-family: young-serif;
+  font-weight: 500;
+}
+
+.container {
+  background-color: #fff;
+  margin: auto;
+  max-width: 900px;
+  margin-top: 50px;
+  padding: 35px;
+  border-radius: 25px;
+}
+
+#omelette {
+  border-radius: 15px;
+}
+
+div {
+  margin-block: 20px;
+}
+
+.prep {
+  background-color: var(--secondary-light);
+  padding: 1.5rem;
+}
+
+.prep li::marker {
+  color: var(--secondary)
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
